@@ -1,0 +1,21 @@
+{
+  "entities": {
+    "Favorite": {
+      "title": "Favorite City",
+      "description": "A city saved by a user",
+      "type": "object",
+      "properties": {
+        "city": { "type": "string" },
+        "userId": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["city", "userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/favorites/{cityId}": {
+      "schema": "Favorite",
+      "description": "User's favorite cities"
+    }
+  }
+}

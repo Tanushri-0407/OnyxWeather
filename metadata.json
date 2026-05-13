@@ -1,0 +1,6 @@
+{
+  "name": "Onyx Weather",
+  "description": "A high-end weather dashboard with regional insights, comparison tools, and saved nodes.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": []
+}
